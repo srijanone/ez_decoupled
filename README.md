@@ -15,5 +15,3 @@ composer require drupal_recipe/ez_decoupled
 
 **CMS:** Drupal
 
-
-# ez_decoupled
