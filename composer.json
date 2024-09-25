@@ -1,0 +1,25 @@
+{
+    "name": "drupal_recipe/ez_decoupled",
+    "description": "Enable api support and preview feature for decoupled apps",
+    "keywords": [
+        "ezcontent",
+        "preview",
+        "Drupal"
+    ],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/ezcontent_api":"^2.3",
+        "drupal_recipe/ez_article": "dev-main",
+        "drupal_recipe/ez_page_builder": "dev-main"
+    },
+    "extra": {
+        "patches": {
+            "drupal/jsonapi_extras": {
+                "Issue #3473990: Fix PHP Fatal error on  Declaration of the normalize function must be compatible with normalize function return type after Schemata 8.x-1.0 was released": "https://git.drupalcode.org/project/jsonapi_extras/-/commit/d7ab37658999b5fae74769ade4155ec7310aa468.diff"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

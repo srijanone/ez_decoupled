@@ -1,0 +1,29 @@
+name: Ezcontent Decoupled
+description: 'Improves Drupal core JSON API experience which supports decoupled apps.'
+recipes:
+  - ez_page_builder
+  - ez_article
+
+install:
+  - ezcontent_api
+  - ezcontent_preview
+  - ezcontent_jsonapi_extension
+
+config:
+  import:
+    decoupled_router: '*'
+    jsonapi_boost: '*'
+    jsonapi_extras: '*'
+    jsonapi_hypermedia: '*'
+    openapi_jsonapi: '*'
+    openapi_ui_redoc: '*'
+    simple_oauth: '*'
+    jsonapi: '*'
+    access_unpublished: '*'
+    tokenuuid: '*'
+    ezcontent_api: '*'
+    ezcontent_preview: '*'
+    ezcontent_jsonapi_extension: '*'
+
+
+
