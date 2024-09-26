@@ -49,3 +49,14 @@ ddev drush recipe recipes/ez_decoupled;
 
 **CMS:** Drupal
 
+**Note:** This recipe depends on contributed libraries. Ensure you have Composer set up to manage these dependencies effectively by following the instructions in the guide.
+
+#### Recommended Method for Installing, Updating, and Managing Contributed Module Libraries Using Composer
+
+For detailed instructions on how to efficiently manage and install libraries for contributed Drupal modules using Composer, please refer to the official guide:
+
+[Recommended Method for Installing, Updating, and Managing Contributed Module Libraries Using Composer](https://www.drupal.org/docs/extending-drupal/recommended-method-for-installing-updating-and-managing-contributed-module-libraries-using-composer)
+
+
+This guide covers how to merge the `composer.libraries.json` with your site's `composer.json` file for seamless updates.
+
