@@ -25,5 +25,32 @@ config:
     ezcontent_preview: '*'
     ezcontent_jsonapi_extension: '*'
 
-
-
+  actions:
+      user.role.api:
+        ensure_exists:
+          id: api
+        grantPermissions:
+          - 'access_unpublished block_content cards'
+          - 'access_unpublished block_content content_listing_component'
+          - 'access_unpublished block_content embed_block'
+          - 'access_unpublished block_content hero_media_block'
+          - 'access_unpublished block_content map_block'
+          - 'access_unpublished block_content referenced_cards'
+          - 'access_unpublished block_content social_media'
+          - 'access_unpublished block_content text_block'
+          - 'access_unpublished media image'
+          - 'access_unpublished media instagram'
+          - 'access_unpublished media tweet'
+          - 'access_unpublished media video'
+          - 'access_unpublished menu_link_content'
+          - 'access_unpublished node article'
+          - 'access_unpublished node landing_page'
+          - 'access_unpublished paragraphs_library_item'
+          - 'access_unpublished taxonomy_term tags'
+          - 'administer display modes'
+          - 'administer menu'
+          - 'configure any layout'
+          - 'delete own files'
+          - 'use text format restricted_html'
+          - 'view all revisions'
+          - 'view media'
