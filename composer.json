@@ -1,5 +1,5 @@
 {
-    "name": "drupal_recipe/ez_decoupled",
+    "name": "srijanone/ez_decoupled",
     "description": "Enable api support and preview feature for decoupled apps",
     "keywords": [
         "ezcontent",
@@ -10,8 +10,8 @@
     "license": "GPL-2.0+",
     "require": {
         "drupal/ezcontent_api":"^2.3",
-        "drupal_recipe/ez_article": "dev-main",
-        "drupal_recipe/ez_page_builder": "dev-main"
+        "srijanone/ez_article": "dev-main",
+        "srijanone/ez_page_builder": "dev-main"
     },
     "extra": {
         "patches": {
