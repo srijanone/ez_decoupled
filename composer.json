@@ -10,6 +10,7 @@
     "license": "GPL-2.0+",
     "require": {
         "drupal/ezcontent_api":"^2.3",
+        "drupal/layout_builder_modal": "^1.2",
         "srijanone/ez_article": "dev-main",
         "srijanone/ez_page_builder": "dev-main"
     },

@@ -8,6 +8,7 @@ install:
   - ezcontent_api
   - ezcontent_preview
   - ezcontent_jsonapi_extension
+  - layout_builder_modal
 
 config:
   import:
