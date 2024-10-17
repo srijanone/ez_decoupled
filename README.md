@@ -5,7 +5,7 @@ Enable api support and preview feature for decoupled apps.
 
 ## Installation
 
-### Install the project using composer 
+### A. Create a new project using composer
 
 #### 1. Firstly, To create a new project and navigate to the project directory, you need to execute the following commands:
 ```bash
@@ -70,7 +70,7 @@ drush si
 drush recipe recipes/ez_decoupled;     
 ```
 
-### Install the project using ddev
+### B. Create a new project using ddev
 
 #### 1. Firstly, To create a new project and navigate to the project directory, you need to execute the following commands:
 ```bash
@@ -140,6 +140,66 @@ ddev composer install
 ddev drush si
 ddev drush recipe recipes/ez_decoupled;     
 ```
+### C. Install the recipe in existing project
+
+#### 1. For Composer to understand your new Recipe install-type, you need to require the Composer Installer Extender package.
+```bash
+composer require oomphinc/composer-installers-extender:2.0.1
+```
+
+#### 2. Next, you need to add two entries in composer.json for an install-type and its path:
+```bash
+"installer-types": ["drupal-recipe"],
+"installer-paths": {
+ // existing entries omitted...
+ "docroot/recipes/contrib/{$name}": [
+   "type:drupal-recipe"
+ ]
+}
+```
+
+#### 3. Execute the specified commands to include these two repositories in the composer.json file
+```bash
+composer config repositories.drupal8 composer https://packages.drupal.org/8
+composer config repositories.asset-packagist composer https://asset-packagist.org
+```
+#### 4. To configure the minimum stability and enable patching, execute the following commands
+```bash
+composer config minimum-stability dev
+composer config extra.enable-patching true
+```
+#### 5. To enable specific composer plugins for patching and installation purposes, execute the following commands
+```bash
+composer config --no-plugins allow-plugins.cweagans/composer-patches true
+composer config --no-plugins allow-plugins.oomphinc/composer-installers-extender true
+```
+#### 6. To install Composer Patches Plugin and Drush, execute the following commands
+```bash
+composer require cweagans/composer-patches
+composer require drush/drush
+```
+#### 7. To merge the composer.libraries.json file into your main composer.json, install the Composer Merge Plugin. From the project directory, open a terminal and run
+```bash
+composer require wikimedia/composer-merge-plugin 
+```
+
+#### 8. Then Edit the composer.json file of your Drupal website, and under the "extra" section add this entry
+```bash
+"merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
+```
+
+#### 9. To require the dev-main branch of ez decoupled execute this command
+```bash
+composer require srijanone/ez_decoupled:dev-main
+```
+
+#### 10. Now run below commands to configure your site
+```bash
+composer install
+drush si
+drush recipe recipes/ez_decoupled;     
+```
+
 
 ## Tech Stack
 
