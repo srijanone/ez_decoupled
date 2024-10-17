@@ -1,7 +1,6 @@
 # srijanone/ez_decoupled
 
-Enable api support and preview feature for decoupled apps.
-
+EzContent Decoupled: Effortlessly manage content, enhance SEO and create dynamic UIs with modern front-end frameworks for a superior decoupled experience.
 
 ## Installation
 
