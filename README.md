@@ -66,7 +66,7 @@ composer require srijanone/ez_decoupled:dev-main
 ```bash
 composer install
 drush si
-drush recipe recipes/ez_decoupled;     
+drush recipe recipes/contrib/ez_decoupled;     
 ```
 
 ### B. Create a new project using ddev
@@ -137,7 +137,7 @@ ddev composer require srijanone/ez_decoupled:dev-main
 ```bash
 ddev composer install
 ddev drush si
-ddev drush recipe recipes/ez_decoupled;     
+ddev drush recipe recipes/contrib/ez_decoupled;     
 ```
 ### C. Install the recipe in existing project
 
@@ -195,7 +195,7 @@ composer require srijanone/ez_decoupled:dev-main
 #### 10. Now run below commands to configure your site
 ```bash
 composer install
-drush recipe recipes/ez_decoupled;     
+drush recipe recipes/contrib/ez_decoupled;     
 ```
 
 
