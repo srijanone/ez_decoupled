@@ -57,7 +57,7 @@ composer require wikimedia/composer-merge-plugin
 "merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
 ```
 
-#### 10. To require the dev-main branch of ez decoupled execute this command
+#### 10. To require the dev-main branch of ez decoupled, execute this command
 ```bash
 composer require srijanone/ez_decoupled:dev-main
 ```
@@ -128,7 +128,7 @@ ddev composer require wikimedia/composer-merge-plugin
 "merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
 ```
 
-#### 11. To require the dev-main branch of ez decoupled execute this command
+#### 11. To require the dev-main branch of ez decoupled, execute this command
 ```bash
 ddev composer require srijanone/ez_decoupled:dev-main
 ```
@@ -187,7 +187,7 @@ composer require wikimedia/composer-merge-plugin
 "merge-plugin": { "include": [ "web/modules/contrib/*/composer.libraries.json" ] } 
 ```
 
-#### 9. To require the dev-main branch of ez decoupled execute this command
+#### 9. To require the dev-main branch of ez decoupled, execute this command
 ```bash
 composer require srijanone/ez_decoupled:dev-main
 ```
