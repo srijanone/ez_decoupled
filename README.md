@@ -195,7 +195,6 @@ composer require srijanone/ez_decoupled:dev-main
 #### 10. Now run below commands to configure your site
 ```bash
 composer install
-drush si
 drush recipe recipes/ez_decoupled;     
 ```
 
