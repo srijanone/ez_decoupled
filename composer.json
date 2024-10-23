@@ -11,8 +11,8 @@
     "require": {
         "drupal/ezcontent_api":"^2.3",
         "drupal/layout_builder_modal": "^1.2",
-        "srijanone/ez_article": "dev-main",
-        "srijanone/ez_page_builder": "dev-main"
+        "srijanone/ez_article": "^1.0.1",
+        "srijanone/ez_page_builder": "^1.0.1"
     },
     "extra": {
         "patches": {
